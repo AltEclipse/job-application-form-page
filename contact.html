@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Contact Me</h1>
+        <h1>Contact</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">About Me</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="application.html">Job Application</a></li>
             </ul>
@@ -19,8 +20,27 @@
     </header>
     <main>
         <section>
-            <p>Feel free to get in touch with me via email at <a href="mailto:bruntgrule.gmail.com">your.email@example.com</a> or follow me on social media.</p>
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you. Whether you have a question about our games, want to give feedback, or just want to say hello, don't hesitate to reach out.</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2024 Gabriel. All rights reserved.</p>
+    </footer>
 </body>
 </html>
